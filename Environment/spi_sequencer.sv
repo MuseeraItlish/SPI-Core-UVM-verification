@@ -1,0 +1,24 @@
+`ifndef SPI_SEQUENCER_SV
+`define SPI_SEQUENCER_SV
+
+class spi_sequencer extends uvm_sequencer #(spi_transaction);
+
+    `uvm_component_utils(spi_sequencer)
+
+    // Virtual interface
+    virtual spi_if vif;
+
+    //----------------------------------------------------
+    // Constructor
+    //----------------------------------------------------
+
+    function new(string name = "spi_sequencer",
+                 uvm_component parent);
+
+        super.new(name, parent);
+
+    endfunction
+
+endclass
+
+`endif
