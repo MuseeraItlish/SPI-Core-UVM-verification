@@ -1,0 +1,16 @@
+  xrun -coverage ALL -uvm -f run.f +UVM_TESTNAME=spi_mosi_test 
+ 
+  xrun -uvm -access +rwc -coverage ALL -f run.f +UVM_TESTNAME=spi_mosi_test 
+
+  xrun -uvm -access +rwc -coverage ALL -f run.f +UVM_TESTNAME=spi_loopback_test 
+
+  xrun -uvm -access +rwc -coverage ALL -f run.f +UVM_TESTNAME=spi_mosi_loopback_test 
+
+xrun -uvm -access +rwc -coverage ALL -f run.f +UVM_TESTNAME=spi_full_duplex_test 
+
+  xrun -uvm -coverage all +UVM_TESTNAME=spi_fifo_fill_test 
+  xrun -uvm -coverage all +UVM_TESTNAME=spi_multi_byte_test 
+
+  xrun -uvm -coverage ALL -f run.f +UVM_TESTNAME=spi_multi_byte_test 
+  xrun -uvm -coverage ALL -f run.f +UVM_TESTNAME=spi_multi_byte_test 
+  xrun -uvm -coverage ALL -f run.f +UVM_TESTNAME=spi_multi_byte_test 
